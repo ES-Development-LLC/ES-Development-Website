@@ -73,9 +73,11 @@
 
 .lightTitle {
   font-family: 'ITC Avant Garde Gothic Std Extra Light';
+  color: white;
 }
 
 .boldTitle {
   font-family: 'ITC Avant Garde Gothic Std Bold';
+  color: #2F4F4F;
 }
 
