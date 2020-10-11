@@ -1,0 +1,12 @@
+@media screen and (min-width: 800px) {
+  .mainPageTitle {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainPageTitle {
+    font-size: 25vw;
+  }
+}
+

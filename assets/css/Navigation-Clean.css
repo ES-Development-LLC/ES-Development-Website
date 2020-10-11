@@ -172,15 +172,3 @@
   font-size: 3vw;
 }
 
-@media screen and (max-width: 800px) {
-  .titleSection, h1 {
-    font-size: 25vw;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .titleSection, h1 {
-    font-size: 10vw;
-  }
-}
-
