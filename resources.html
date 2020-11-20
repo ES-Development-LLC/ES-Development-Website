@@ -51,9 +51,7 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
-<script data-ad-client="ca-pub-2690641987048640" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+<script data-ad-client="ca-pub-2690641987048640" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
 <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 </head>
 
@@ -75,11 +73,52 @@
             </div>
         </div>
     </nav>
-    <section class="d-flex flex-column justify-content-center align-items-center titleSection" style="padding: 50px;height: 41vh;width: 100vw;background: url(&quot;assets/img/ES%20Dev%20Background%20Secondary%202.png&quot;) center / cover no-repeat;"><h1 style="text-align: center;color: #202a33;font-family: 'ITC Avant Garde Gothic std Bold';" class="mainPageTitle"><span class="boldTitle">ES </span><span class="lightTitle">Dev</span></h1></section>
-    <section>
+    <section class="d-flex flex-column justify-content-center align-items-center titleSection" style="padding: 50px;height: 41vh;width: 100vw;background: url(&quot;assets/img/ES%20Dev%20Background%20Secondary%202.png&quot;) center / cover no-repeat;"><h1 style="text-align: center;color: #202a33;font-family: 'ITC Avant Garde Gothic std Bold';" class="mainPageTitle"><span class="boldTitle">ES </span><span class="lightTitle">Dev</span></h1></section><div>
+    
+     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+
+<!--     <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyC4nkzFPcD1ODP42TiFpzaOQ3tNqHiRIVc",
+        authDomain: "es-admin-86d5b.firebaseapp.com",
+        databaseURL: "https://es-admin-86d5b.firebaseio.com",
+        projectId: "es-admin-86d5b",
+        storageBucket: "es-admin-86d5b.appspot.com",
+        messagingSenderId: "366373933747",
+        appId: "1:366373933747:web:a5630df03224c9120b96c6",
+        measurementId: "G-KYKNFLTVPH"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script> -->
+    
+    
+    
+    
+    
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+    <!-- <h1>Welcome to My Awesome App</h1> -->
+    <div id="firebaseui-auth-container" class="l" style="margin-top: 10vh; margin-bottom: 10vh"></div>
+    <div id="loader" class="l">Loading...</div>
+
+
+</div>
+    <section id="computerBackgrounds" class="r">
         <h1 id="computer_backgrounds-1" style="font-family: 'ITC Avant Garde Gothic Std Bold';margin: 10px;text-align: center;font-size: 5vw;padding-top: 3vh;">Computer Backgrounds</h1>
     </section>
-    <div class="article-list">
+    <div id="cBackgrounds" class="article-list r">
         <div class="container">
             <div class="intro">
                 <p class="text-center">Below are 3 custom ES Development computer backgrounds, <br>free to use</p>
@@ -103,10 +142,10 @@
             </div>
         </div>
     </div>
-    <section>
+    <section id="colorCodes" class="r">
         <h1 id="color_codes" style="font-family: 'ITC Avant Garde Gothic Std Bold';margin: 10px;text-align: center;font-size: 5vw;padding-top: 3vh;">Color Codes</h1>
     </section>
-    <div class="article-list">
+    <div id="cCodes" class="article-list r">
         <div class="container">
             <div class="intro">
                 <p class="text-center">Below are the main 3 colors of ES Development.<br>The HEX codes are below the colors.</p>
