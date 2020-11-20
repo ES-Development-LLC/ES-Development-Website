@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
-	src: url(/assets/fonts/ITCAvantGardeStdMdObl.woff) format('woff');
+	src: url(../../assets/fonts/ITCAvantGardeStdMdObl.woff) format('woff');
 	font-weight: normal;
 	font-style: normal;
 }

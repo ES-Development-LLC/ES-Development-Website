@@ -5,7 +5,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     if (user!=null){
       var email_id = user.email;
-      document.getElementById("head").innerHTML = ()"Welcome " + email_id);
+      window.alert("Welcome " + email_id);
+      //document.getElementById("head").innerHTML = ()"Welcome " + email_id);
     }
 
   } else {
