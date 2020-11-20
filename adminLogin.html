@@ -55,50 +55,44 @@
 </head>
 
 <body style="width: 100vw;height: 100vh;">
-    <div class="text-center d-xl-flex align-items-center align-content-center justify-content-xl-center" style="margin-top: 10vh;">
-        <div class="col" style="text-align: center;width: 100vw;">
-            <div class="row">
-                <div class="col">
-                    <h1 style="text-align: center;font-family: 'ITC Avant Garde Gothic Std Bold';font-size: 5vw;">Admin Login</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center align-self-center" style="text-align: center;">
-                    <form style="text-align: center;"><input class="form-control form-control-lg" type="email" id="email_field" style="width: 25vw;margin: 0px auto;text-align: left;font-family: 'ITC Avant Garde Gothic Std Book';border-color: #202a33;border-radius: 11px;margin-top: 1.5vh;font-size: 1.5vw;"
-                            placeholder="Email..." value=" "><input class="form-control form-control-lg" type="password" id="password_field" style="width: 25vw;margin: 0px auto;font-family: 'ITC Avant Garde Gothic Std Book';border-color: #202a33;border-radius: 11px;margin-top: 1.5vh;font-size: 1.5vw;"
-                            placeholder="Password..."><button class="btn btn-primary" type="button" style="margin: 0px auto;margin-top: 2vh;font-family: 'ITC Avant Garde Gothic Std Book';width: 12.5vw;font-size: 1.5vw;" onclick="login()">Login</button></form>
-                </div>
-            </div>
-        </div>
-    </div><!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <div class="text-center d-xl-flex flex-column align-content-center login" style="margin-top: 10vh;">
+        <h1 style="text-align: center;font-family: 'ITC Avant Garde Gothic Std Bold';font-size: 5vw;">Admin Login</h1><input class="form-control-lg" type="email" id="email_field" style="width: 25vw;margin: 0px auto;text-align: left;font-family: 'ITC Avant Garde Gothic Std Book';border-color: #202a33;border-radius: 11px;margin-top: 1.5vh;font-size: 1.5vw;"
+            placeholder="Email..." value="hey@emmetts.dev"><input class="form-control-lg" type="password" id="password_field" style="width: 25vw;margin: 0px auto;font-family: 'ITC Avant Garde Gothic Std Book';border-color: #202a33;border-radius: 11px;margin-top: 1.5vh;font-size: 1.5vw;"
+            placeholder="Password..." value="ssfN11TM7X7Y"><button class="btn btn-primary" type="button" style="margin: 0px auto;margin-top: 2vh;font-family: 'ITC Avant Garde Gothic Std Book';width: 12.5vw;font-size: 1.5vw;" onclick="login()">Login</button></div><div> 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyC4nkzFPcD1ODP42TiFpzaOQ3tNqHiRIVc",
-    authDomain: "es-admin-86d5b.firebaseapp.com",
-    databaseURL: "https://es-admin-86d5b.firebaseio.com",
-    projectId: "es-admin-86d5b",
-    storageBucket: "es-admin-86d5b.appspot.com",
-    messagingSenderId: "366373933747",
-    appId: "1:366373933747:web:a5630df03224c9120b96c6",
-    measurementId: "G-KYKNFLTVPH"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-<script src="admin.js"></script>
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/js/smart-forms.min.js"></script>
-    <script src="/assets/js/admin.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyC4nkzFPcD1ODP42TiFpzaOQ3tNqHiRIVc",
+        authDomain: "es-admin-86d5b.firebaseapp.com",
+        databaseURL: "https://es-admin-86d5b.firebaseio.com",
+        projectId: "es-admin-86d5b",
+        storageBucket: "es-admin-86d5b.appspot.com",
+        messagingSenderId: "366373933747",
+        appId: "1:366373933747:web:a5630df03224c9120b96c6",
+        measurementId: "G-KYKNFLTVPH"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    
+    
+    <script src="admin.js"></script>
+
+</div>
+    <script
+        src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js/smart-forms.min.js"></script>
+        <script src="/assets/js/admin.js"></script>
 </body>
 
 </html>
