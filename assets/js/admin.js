@@ -16,12 +16,14 @@ firebase.auth().onAuthStateChanged(function(user) {
 //////////////////////////////////////////////////////
 
 function login(){
-  var success = true;
+  var success;
   try{
 
     var userEmail = document.getElementById("email_field").value;
     var userPass = document.getElementById("password_field").value;
     window.alert(userEmail + " " + userPass);
+
+    success = true;
 
   } catch(err) {
     success = false;
@@ -32,7 +34,7 @@ function login(){
       firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
     .then((user) => {
       // Signed in
-      window.alert("Signed in as "+ userEmail);
+      window.location.replace("https://emmetts.dev/resources");
     })
     .catch((error) => {
       var errorCode = error.code;
