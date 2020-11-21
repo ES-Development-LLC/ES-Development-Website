@@ -16,24 +16,28 @@ firebase.analytics();
 function loginStart(){
   var r = document.getElementsByClassName("r");
   for (i=0; i < r.length; i++){
-    r[i].style.visibility = "hidden";
+    //r[i].style.visibility = "hidden";
+      r[i].style.display = "none";
   }
 
   var l = document.getElementsByClassName("l");
   for (i=0; i < l.length; i++){
-    l[i].style.visibility = "visible";
+    //l[i].style.visibility = "visible";
+      l[i].style.display = "block";
   }
 }
 
 function loginGood(){
   var r = document.getElementsByClassName("r");
   for (i=0; i < r.length; i++){
-    r[i].style.visibility = "visible";
+    //r[i].style.visibility = "visible";
+      r[i].style.display = "block";
   }
 
   var l = document.getElementsByClassName("l");
   for (i=0; i < l.length; i++){
-    l[i].style.visibility = "hidden";
+    //l[i].style.visibility = "hidden";
+      l[i].style.display = "none";
   }
 }
 
