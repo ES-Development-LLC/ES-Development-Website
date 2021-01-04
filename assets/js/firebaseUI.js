@@ -13,31 +13,34 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 ///////////////////////////////////////////////////
+
+
+
 function loginStart(){
   var r = document.getElementsByClassName("r");
   for (i=0; i < r.length; i++){
-    //r[i].style.visibility = "hidden";
-      r[i].style.display = "none";
+    r[i].style.visibility = "hidden";
+      //r[i].style.display = "none";
   }
 
   var l = document.getElementsByClassName("l");
   for (i=0; i < l.length; i++){
-    //l[i].style.visibility = "visible";
-      l[i].style.display = "block";
+    l[i].style.visibility = "visible";
+      //l[i].style.display = "block";
   }
 }
 
 function loginGood(){
   var r = document.getElementsByClassName("r");
   for (i=0; i < r.length; i++){
-    //r[i].style.visibility = "visible";
-      r[i].style.display = "block";
+    r[i].style.visibility = "visible";
+      //r[i].style.display = "block";
   }
 
   var l = document.getElementsByClassName("l");
   for (i=0; i < l.length; i++){
-    //l[i].style.visibility = "hidden";
-      l[i].style.display = "none";
+    l[i].style.visibility = "hidden";
+      //l[i].style.display = "None";
   }
 }
 
@@ -48,9 +51,7 @@ function loginGood(){
 try{
 
   loginStart();
-
   var ui = new firebaseui.auth.AuthUI(firebase.auth());
-
 
   // ui.start('#firebaseui-auth-container', {
   //   signInOptions: [
@@ -95,7 +96,6 @@ var uiConfig = {
 
 
 
-// The start method will wait until the DOM is loaded.
 try{
   ui.start('#firebaseui-auth-container', uiConfig);
 } catch(err) {
