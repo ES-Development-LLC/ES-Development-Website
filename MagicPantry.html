@@ -66,11 +66,10 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
   })();
-</script><script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+</script>
 </head>
 
-<body>
+<body style="background: #202a33;">
     <nav class="navbar navbar-dark navbar-expand-md sticky-top navigation-clean" style="color: #ffffff;width: 100vw;background: #202a33;height: 9vh;">
         <div class="container-fluid"><a class="navbar-brand" href="https://emmetts.dev" style="color: #f7da26;font-family: 'ITC Avant Garde Gothic Std Bold';">ES Development</a><button data-toggle="collapse" class="navbar-toggler text-white border rounded" data-target="#navcol-1" style="background: rgba(255,255,255,0);"><span class="sr-only" style="color: white;">Toggle navigation</span><span class="navbar-toggler-icon text-white"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1" style="color: #202a33;">
@@ -84,111 +83,67 @@
             </div>
         </div>
     </nav>
-    <section class="d-flex flex-column justify-content-center align-items-center titleSection" style="padding: 50px;height: 41vh;width: 100vw;background: url(&quot;assets/img/ES%20Dev%20Background%20Secondary%202.png&quot;) center / cover no-repeat;"><h1 style="text-align: center;color: #202a33;font-family: 'ITC Avant Garde Gothic std Bold';" class="mainPageTitle"><span class="boldTitle">ES </span><span class="lightTitle">Dev</span></h1></section><div>
-    
-     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
-
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
-
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
-
-<!--     <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyC4nkzFPcD1ODP42TiFpzaOQ3tNqHiRIVc",
-        authDomain: "es-admin-86d5b.firebaseapp.com",
-        databaseURL: "https://es-admin-86d5b.firebaseio.com",
-        projectId: "es-admin-86d5b",
-        storageBucket: "es-admin-86d5b.appspot.com",
-        messagingSenderId: "366373933747",
-        appId: "1:366373933747:web:a5630df03224c9120b96c6",
-        measurementId: "G-KYKNFLTVPH"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script> -->
-    
-    
-    
-    
-    
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-     Your app may use that space for branding, controls and other customizations.-->
-    <!-- <h1>Welcome to My Awesome App</h1> -->
-    <div id="firebaseui-auth-container" class="l" style="margin-top: 10vh; margin-bottom: 10vh"></div>
-    <div id="loader" class="l">Loading...</div>
-
-
-</div>
-    <section id="computerBackgrounds" class="r">
-        <h1 id="computer_backgrounds-1" style="font-family: 'ITC Avant Garde Gothic Std Bold';margin: 10px;text-align: center;font-size: 5vw;padding-top: 3vh;">Computer Backgrounds</h1>
-    </section>
-    <div id="cBackgrounds" class="article-list r">
+    <header>
+        <section class="py-5" style="background: url(&quot;assets/img/ES%20Dev%20Background%20Secondary.png&quot;) center / cover no-repeat;">
+            <div style="width: 100%;height: 100%;margin: 0px;padding: 0px;background: rgba(32,42,51,0.35);box-shadow: 0px 0px 20px 20px rgba(32,42,51,0.35);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 text-center d-none d-md-block"><img class="img-fluid" src="assets/img/mockup-iphone12-blue%20(1).png" style="height: 85vh;"></div>
+                        <div class="col-md-7 align-self-center" style="color: rgb(255,255,255);">
+                            <h1 style="font-family: 'ITC Avant Garde Gothic Std Bold';color: #f7da26;font-size: 7vw;">Magic Pantry</h1><p class="mb-4" style="font-family: 'ITC Avant Garde Gothic Std Light';color: rgb(255,255,255);"><br />We've developed a lightning fast grocery app that syncs across all of your devices, without subscriptions. Who likes subscriptions anyway?<br><br>Magic Pantry was designed to give families around the world a truly great digital grocery list! Long gone are the days of forgetting your paper and pen or paying huge fees for other online lists. Plus with Magic Pantry, everyone in the family can contribute to your lists which sync across all of your devices at lightning-fast speeds and with no interruptions or annoyances!<br><br>Magic Pantry was also created with ease of use in mind! All of the text within Magic Pantry is large enough for every family member to read and our app offers a simple user interface making it easy for anyone to use with just a few taps.<a class="btn btn-primary btn-lg mr-2" role="button" href="https://apps.apple.com/app/id1436453172" style="background: url(&quot;assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg&quot;);background-size: contain;width: 150px;height: 51px;min-height: 40px;max-height: 51px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="text-align: center;width: 100vw;height: 50vh;padding: 20px;margin: 0px;margin-top: 70px;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UtPJ8i16aes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+    </header>
+    <div class="features-boxed" style="margin: 5px;background: #202a33;">
         <div class="container">
             <div class="intro">
-                <p class="text-center">Below are 3 custom ES Development computer backgrounds, <br>free to use</p>
+                <h2 class="text-center" style="color: #67b7ff;">Features </h2>
+                <p class="text-center" style="color: #ffffff;">On Point Mathematics was designed for students, by students</p>
             </div>
-            <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/ES%20Dev%20Computer%20Wallpaper%20v2%20-%20No%20Text.png"></a>
-                    <h3 class="name">ES Light Background</h3><a class="action" href="https://drive.google.com/file/d/1tds6d2pf0v7PgxZIPYqpuawNd3m6pV5O/view?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-download">
-                            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
-                            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
-                        </svg></a>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="height: 40vh;width: 41vh;"><i class="fa fa-star-o icon"></i>
+                        <h3 class="name">Simple</h3>
+                        <p class="description">Our app was designed with usability in mind. You can calculate anything in a matter of seconds, without having to go through unnecessary menus or buttons.</p>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/ES%20Dev%20Background%20Secondary%202.png"></a>
-                    <h3 class="name">ES Mid-Dark</h3><a class="action" href="https://drive.google.com/file/d/1u9Ul-YOBA8Cxp9g6MPWFi9dCcmlYZP2u/view?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-download">
-                            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
-                            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
-                        </svg></a>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="width: 41vh;height: 40vh;"><i class="fa fa-clock-o icon"></i>
+                        <h3 class="name">Always available</h3>
+                        <p class="description">On Point Math has all of the necessary information stored on your device, so no need to worry about little/no internet</p>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/ES%20Dev%20Background%20Secondary.png"></a>
-                    <h3 class="name">ES Dark</h3><a class="action" href="https://drive.google.com/file/d/1eqsUKLGBqi3nej5ET8P_zWm3Pi4FkfxI/view?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-download">
-                            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
-                            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
-                        </svg></a>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="width: 41vh;height: 40vh;"><i class="fa fa-calculator icon"></i>
+                        <h3 class="name">Accurate Calculator</h3>
+                        <p class="description">Accurate, as it should be.<br><br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="width: 41vh;height: 40vh;"><i class="fa fa-money icon"></i>
+                        <h3 class="name">Free</h3>
+                        <p class="description">Nothing else to say here.<br><br>We're just happy to help :)</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="width: 41vh;height: 40vh;"><i class="fa fa-plane icon"></i>
+                        <h3 class="name">Fast </h3>
+                        <p class="description">Since On Point Math requires no servers or external tools, the app is lightning fast!<br><br></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="width: 41vh;height: 40vh;"><i class="fa fa-phone icon"></i>
+                        <h3 class="name">Mobile-first</h3>
+                        <p class="description">On Point Mathematics was built for mobile devices from the start. So of course, it looks perfect on your favorite devices</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <section id="colorCodes" class="r">
-        <h1 id="color_codes" style="font-family: 'ITC Avant Garde Gothic Std Bold';margin: 10px;text-align: center;font-size: 5vw;padding-top: 3vh;">Color Codes</h1>
-    </section>
-    <div id="cCodes" class="article-list r">
-        <div class="container">
-            <div class="intro">
-                <p class="text-center">Below are the main 3 colors of ES Development.<br>The HEX codes are below the colors.</p>
-            </div>
-            <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" style="background: #f7da26;width: 20vw;height: 20vh;"></a>
-                    <h3 class="name">ES Yellow</h3>
-                    <p class="description">This yellow is the primary (main) color of ES Development. Most times, it is used specifically for links, header text, or other special items.<br><br><strong><em>DO NOT use this color on a light background!</em></strong><br><br>Hex:&nbsp;#F7DA26<br>RGB: (247, 218, 38)</p>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" style="width: 20vw;height: 20vh;background: #202a33;"></a>
-                    <h3 class="name">ES Black</h3>
-                    <p class="description">This dark blue is the secondary color of ES Development. Although it is secondary, you'll probably see it more often than our main yellow color. Use this dark blue for things like text, headers, or even as a background color!<br><br><br>Hex:&nbsp;#202A33<br>RGB: (32, 42, 51)</p><a class="action" href="#"></a>
-                </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" style="background: #222222;width: 20vw;height: 20vh;"></a>
-                    <h3 class="name">ES Grey</h3>
-                    <p class="description">This grey is the alternative color to the dark blue. It's suggested that this color is used mainly for text on a light background.<br><br><strong><em>DO NOT use this color on a dark background!</em></strong><br><br>Hex:&nbsp;#0D0D0D<br>RGB: (13, 13, 13)</p><a class="action" href="#"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section id="importantLinks" class="r" style="margin-bottom: 20vh;">
-        <h1 id="importantLinksHead" style="font-family: 'ITC Avant Garde Gothic Std Bold';margin: 10px;text-align: center;font-size: 5vw;padding-top: 3vh;margin-bottom: 5vh;">Important Links</h1>
-        <ul class="list-group" style="text-align: center;font-family: 'ITC Avant Garde Gothic Std Book';">
-            <li class="list-group-item" style="text-align: center;height: 6vh;width: 100vw;"><a href="https://github.com/RealEmmettS" style="text-align: center;height: 6vh;width: 100vw;">GitHub</a></li>
-            <li class="list-group-item" style="text-align: center;height: 6vh;width: 100vw;"><a href="https://repl.it/team/ESDevelopment" style="text-align: center;height: 6vh;width: 100vw;">ES Development Repl.it</a></li>
-            <li class="list-group-item" style="text-align: center;height: 6vh;width: 100vw;"><a href="https://cloudconvert.com/" style="text-align: center;height: 6vh;width: 100vw;">CloudConvert</a></li>
-            <li class="list-group-item" style="text-align: center;height: 6vh;width: 100vw;"><a href="https://esdevprinting.com/">ES Printing Service</a></li>
-        </ul>
-    </section>
     <div class="d-none d-print-block d-sm-none d-md-block d-lg-flex d-xl-block justify-content-lg-center align-items-lg-center footer-dark border-top" style="background-color: #202a33;margin-top: 0;width: 100vw;height: 33vh;">
         <footer>
             <div class="container">
