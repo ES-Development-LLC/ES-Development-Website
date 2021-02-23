@@ -85,52 +85,55 @@
         </div>
     </nav><div class="container-fluid" id="qrCode" style=
      
-     "height: 91vh;
+     "min-height: 91vh;
+      height: -moz-fit-content;
+      height: fit-content;
       width: 100vw;
       padding-top: 5vh;
       padding-left: 5vw;
-      padding-right: 5vw;"> 
-    
-	
+      padding-right: 5vw;
+      margin-bottom: 15vh"> 
+     
 
 	<div class="form-horizontal"> 
 	<div class="form-group"> 
 		<label class="control-label col-sm-2"
 		for="content" style="font-family: ITC Avant Garde Gothic std Bold"> 
-		Content: 
+		Text to Display: 
 		</label> 
 		<div class="col-sm-10"> 
+            
+    
 
 		<!-- Input box to enter the 
 			required data -->
 		<input type="text" size="60"
 			maxlength="60" class="form-control"
-			id="content" placeholder="Enter content for the QR code" /> 
+			id="content" placeholder="Enter billboard text" /> 
 		</div> 
 	</div> 
 	<div class="form-group"> 
 		<div class="col-sm-offset-2 col-sm-10"> 
-
+            
+    <!--Slider to set font size -->
+        <div style="margin-bottom: 5vh;">
+            <p style="font-family: ITC Avant Garde Gothic std Bold">Text Size: <span id="sizeDisplay" style="font-family: ITC Avant Garde Gothic std Book">10vw</span></p>
+      <input type="range" min="1" max="100" value="10" class="slider" id="billboardSize">
+        </div>
+    
 		<!-- Button to generate QR Code for 
 		the entered data -->
 		<button type="button" class= 
 			"btn btn-primary" id="generate" style="font-family: ITC Avant Garde Gothic std Bold"> 
-			Generate QR
+			Display Text
 		</button> 
 		</div> 
 	</div> 
 	</div> 
     
-    <div class="text-center border-top" style="margin-top: 5vh"> 
-
-	<!-- Get a Placeholder image initially, 
-	this will change according to the 
-	data entered later -->
-	<img src= 
-"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
-		class="qr-code img-thumbnail img-responsive" style="margin-top: 5vh;"/> 
-	</div> 
-    
+    <div class="text-center border-top"> 
+         <h1 style="font-size: 10vw; font-family: ITC Avant Garde Gothic std Medium; word-wrap: break-word; margin-top: 5vh" id="billboard">Billboard</h1> 
+	</div>
     
 </div> 
 <script src= 
@@ -138,10 +141,19 @@
 </script> 
 
 <script> 
-	// Function to HTML encode the text 
-	// This creates a new hidden element, 
-	// inserts the given text into it 
-	// and outputs it out as HTML 
+	
+
+
+    // Update the current slider value (each time you drag the slider handle)
+    document.getElementById("billboardSize").oninput = function() {
+      //var rawSize = this.value;
+      var billboardSize = this.value + "vw";
+        
+      document.getElementById("sizeDisplay").innerHTML = billboardSize;
+      document.getElementById("billboard").style.fontSize = billboardSize;
+
+    }
+    
 	function htmlEncode(value) { 
 	return $('<div/>').text(value) 
 		.html(); 
@@ -153,17 +165,10 @@
 	// for the generate button 
 	$('#generate').click(function () { 
 
-		// Generate the link that would be 
-		// used to generate the QR Code 
-		// with the given data 
-		let finalURL = 
-'https://chart.googleapis.com/chart?cht=qr&chl=' + 
-		htmlEncode($('#content').val()) + 
-		'&chs=160x160&chld=L|0' 
+		document.getElementById("billboard").innerHTML = document.getElementById("content").value;
+        
+	 
 
-		// Replace the src of the image with 
-		// the QR code image 
-		$('.qr-code').attr('src', finalURL); 
 	}); 
 	}); 
 </script> 
