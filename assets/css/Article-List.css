@@ -73,3 +73,16 @@
   visibility: visible;
 }
 
+.qr-code {
+  max-width: 200px;
+  margin: 10px;
+}
+
+#qrCode {
+  height: 91vh;
+  width: 100vw;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
