@@ -27,9 +27,14 @@
   color: white;
 }
 
+.lightTitle2 {
+  font-family: 'ITC Avant Garde Gothic Std Extra Light';
+  color: #202A33;
+}
+
 .boldTitle {
   font-family: 'ITC Avant Garde Gothic Std Bold';
-  color: #283540;
+  color: #202A33;
 }
 
 .boldTitleWhite {
@@ -70,5 +75,13 @@
   background: #007bff;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.wave {
+  position: absolute;
+  width: 100vw;
+  bottom: -60px;
+  color: #ffffff;
+  opacity: 1;
 }
 

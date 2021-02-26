@@ -86,98 +86,60 @@
                 </ul>
             </div>
         </div>
-    </nav><div class="container-fluid" id="qrCode" style=
-     
-     "min-height: 91vh;
-      height: -moz-fit-content;
-      height: fit-content;
-      height: auto;
-      width: 100vw;
-      padding-top: 5vh;
-      padding-left: 5vw;
-      padding-right: 5vw;
-      margin-bottom: 15vh"> 
-     
-
-	<div class="form-horizontal"> 
-	<div class="form-group"> 
-		<label class="control-label col-sm-2"
-		for="content" style="font-family: ITC Avant Garde Gothic std Bold"> 
-		Text to Display: 
-		</label> 
-		<div class="col-sm-10"> 
-            
+    </nav>
+    <section class="d-flex flex-column justify-content-center align-items-center titleSection" style="padding: 50px;height: 91vh;width: 100vw;background: url(&quot;assets/img/ESDev_Website_Background_OFFICIAL.png&quot;) center / cover no-repeat;margin-bottom: 10vh;padding-right: 1vw;padding-left: 1vw;">
+        <div class="container" style="width: 100%;height: 100%;padding: 0px;margin: 0px;">
+            <div class="row" style="width: 100%;height: 100%;">
+                <div class="col-md-6" style="width: 100%;height: 100%;"><h1 style="
+           text-align: center;
+           color: #202a33;
+           font-family: 'ITC Avant Garde Gothic std Bold';
+           margin-top: 10%"
     
+    class="mainPageTitle">
+    
+    <!-- ------ -->
+    
+    <span class="boldTitle">ES </span>
+    <span class="lightTitle2">Dev</span>
+    
+    <!-- ------ -->
 
-		<!-- Input box to enter the 
-			required data -->
-		<input type="text" size="60"
-			maxlength="60" class="form-control"
-			id="content" placeholder="Enter billboard text" /> 
-		</div> 
-	</div> 
-	<div class="form-group"> 
-		<div class="col-sm-offset-2 col-sm-10"> 
-            
-    <!--Slider to set font size -->
-        <div style="margin-bottom: 5vh;">
-            <p style="font-family: ITC Avant Garde Gothic std Bold">Text Size: <span id="sizeDisplay" style="font-family: ITC Avant Garde Gothic std Book">10vw</span></p>
-      <input type="range" min="1" max="100" value="10" class="slider" id="billboardSize">
+</h1>
+                    <p style="text-align: center;font-size: 3vw;">Software for Everyone.</p>
+                </div>
+                <div class="col-md-6" style="width: 100%;height: 100%;text-align: right;"><img style="width: auto;height: 100%;" src="assets/img/mockup-iphone12-red.png"></div>
+            </div>
         </div>
-    
-		<!-- Button to generate QR Code for 
-		the entered data -->
-		<button type="button" class= 
-			"btn btn-primary" id="generate" style="font-family: ITC Avant Garde Gothic std Bold"> 
-			Display Text
-		</button> 
-		</div> 
-	</div> 
-	</div> 
-    
-    <div class="text-center border-top" style="min-height:100vh; height: auto; padding-top: 20vh;"> 
-         <h1 style="font-size: 10vw; font-family: ITC Avant Garde Gothic std Medium; word-wrap: break-word; margin-top: 5vh" id="billboard">Billboard</h1> 
-	</div>
-    
-</div> 
-<script src= 
-	"https://code.jquery.com/jquery-3.5.1.js"> 
-</script> 
-
-<script> 
-	
-
-
-    // Update the current slider value (each time you drag the slider handle)
-    document.getElementById("billboardSize").oninput = function() {
-      //var rawSize = this.value;
-      var billboardSize = this.value + "vw";
-        
-      document.getElementById("sizeDisplay").innerHTML = billboardSize;
-      document.getElementById("billboard").style.fontSize = billboardSize;
-
-    }
-    
-	function htmlEncode(value) { 
-	return $('<div/>').text(value) 
-		.html(); 
-	} 
-
-	$(function () { 
-
-	// Specify an onclick function 
-	// for the generate button 
-	$('#generate').click(function () { 
-
-		document.getElementById("billboard").innerHTML = document.getElementById("content").value;
-        
-	 
-
-	}); 
-	}); 
-</script> 
-
-
+    </section>
+    <div class="d-flex team-grid" style="margin: 5px;padding-top: 20px;background: #ffffff;margin-bottom: 0px;width: 100vw;height: 100vh;margin-top: 10vh;">
+        <div class="container" style="height: 697px;margin-bottom: 0;padding-bottom: 20;">
+            <div class="intro">
+                <h2 class="text-center" style="color: #202A33;margin-bottom: 20px;">Products</h2>
+                <p class="text-center" style="color: #202A33;">At ES Development, we strive to make your day just a little bit easier through our simple and easy-to-use mobile applications built for everyone</p>
+            </div>
+            <div class="row justify-content-center align-items-center people" style="height: 480px;">
+                <div class="col-md-4 col-lg-3 item" style="width: auto;height: auto;">
+                    <div class="box" style="background: url(assets/img/MagicPantryLogo.png) center / contain no-repeat;">
+                        <div class="cover" style="background: #202A33;">
+                            <h3 class="name" style="color: #F7DA26;">Magic Pantry</h3>
+                            <p class="title" style="color: #F7DA26;">IOS</p>
+                            <div class="d-xl-flex social"><a href="https://emmetts.us/MagicPantry" style="color: #F7DA26;">magic.emmetts.dev</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item" style="width: auto;height: auto;">
+                    <div class="box" style="background: url(&quot;assets/img/OPM_Logo_1024.png&quot;) center / contain no-repeat;">
+                        <div class="cover" style="background: #202A33;text-align: center;">
+                            <h3 class="name" style="color: #F7DA26;">On Point Math</h3>
+                            <p class="title" style="color: #F7DA26;">IOS</p>
+                            <div class="social"><a href="math.html" style="color: #F7DA26;margin: 0px;">emmetts.dev/math</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="d-none d-print-block d-sm-none d-md-block d-lg-flex d-xl-block justify-content-lg-center align-items-lg-center footer-dark border-top" style="background-color: #202a33;margin-top: 0;width: 100vw;height: 33vh;">
         <footer>
             <div class="container">
