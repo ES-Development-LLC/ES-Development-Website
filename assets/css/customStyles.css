@@ -25,6 +25,7 @@
 .lightTitle {
   font-family: 'ITC Avant Garde Gothic Std Extra Light';
   color: white;
+  -webkit-text-stroke: 1px #202A33;
 }
 
 .lightTitle2 {
@@ -37,9 +38,10 @@
   color: #202A33;
 }
 
-.boldTitleWhite {
+.boldTitle2 {
   font-family: 'ITC Avant Garde Gothic Std Bold';
   color: white;
+  -webkit-text-stroke: 1.5px #202A33;
 }
 
 .slider {
