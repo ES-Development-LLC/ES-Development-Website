@@ -77,14 +77,14 @@
       padding-top: 5vh;
       padding-left: 5vw;
       padding-right: 5vw;
-      margin-bottom: 15vh"
-     "font-family: Inter"> 
+      margin-bottom: 15vh
+      font-family: Inter"> 
      
 
 	<div class="form-horizontal"> 
 	<div class="form-group"> 
 		<label class="control-label col-sm-2"
-		for="content" style="font-family: Inter"> 
+		for="content" style="font-family: Inter; font-weight:900"> 
 		Text to Display: 
 		</label> 
 		<div class="col-sm-10"> 
@@ -103,14 +103,14 @@
             
     <!--Slider to set font size -->
         <div style="margin-bottom: 5vh;">
-            <p style="font-family: ITC Avant Garde Gothic std Bold">Text Size: <span id="sizeDisplay" style="font-family: Inter">10vw</span></p>
+            <p style="font-family: Inter; font-weight:900">Text Size: <span id="sizeDisplay" style="font-family: Inter">10vw</span></p>
       <input type="range" min="1" max="100" value="10" class="slider" id="billboardSize">
         </div>
     
 		<!-- Button to generate QR Code for 
 		the entered data -->
 		<button type="button" class= 
-			"btn btn-primary" id="generate" style="font-family: Inter"> 
+			"btn btn-primary" id="generate" style="font-family: Inter; font-weight:900"> 
 			Display Text
 		</button> 
 		</div> 
@@ -118,7 +118,7 @@
 	</div> 
     
     <div class="text-center border-top" style="min-height:100vh; height: auto; padding-top: 20vh;"> 
-         <h1 style="font-size: 10vw; font-family: Inter; word-wrap: break-word; margin-top: 5vh" id="billboard">Billboard</h1> 
+         <h1 style="font-size: 10vw; font-family: Inter; font-weight:900; word-wrap: break-word; margin-top: 5vh" id="billboard">Billboard</h1> 
 	</div>
     
 </div> 
@@ -132,10 +132,23 @@
 
     // Update the current slider value (each time you drag the slider handle)
     document.getElementById("billboardSize").oninput = function() {
-      //var rawSize = this.value;
-      var billboardSize = this.value + "vw";
+        
+      var rawSize = this.value;
+      var billboardSize = rawSize + "vw";
+      
+        
+    // if (rawSize>=1 && <=10){
+    //         document.getElementById("billboard").style.fontWeight = "200"; //200
+    // }else if (rawSize>=11 && <=50){
+    //         document.getElementById("billboard").style.fontWeight = "400"; //400
+    // }else if (rawSize>=51 && <=70){
+    //         document.getElementById("billboard").style.fontWeight = "600"; //600
+    // }else if (rawSize>=70 && <=100){
+    //         document.getElementById("billboard").style.fontWeight = "900"; //900
+    // }
         
       document.getElementById("sizeDisplay").innerHTML = billboardSize;
+              
       document.getElementById("billboard").style.fontSize = billboardSize;
 
     }
