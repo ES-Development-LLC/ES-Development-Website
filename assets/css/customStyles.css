@@ -88,3 +88,38 @@
   opacity: 1;
 }
 
+.nav-link {
+}
+
+@media (min-width: 300px) {
+  .customNav {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) {
+  .customNav {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .customNav {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customNav {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
