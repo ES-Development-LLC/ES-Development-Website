@@ -5,6 +5,9 @@
 
 <link rel="icon" href="https://emmetts-resources.s3.amazonaws.com/ES+Development/ESDev_Logo_Circle_OFFICIAL.png?" type="image/png"/>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@900&display=swap" rel="stylesheet">
 
 <script>
   (function () {
@@ -36,7 +39,7 @@
 	<div class="form-horizontal"> 
 	<div class="form-group"> 
 		<label class="control-label col-sm-2"
-		for="content" style="font-family: Inter; font-weight:900"> 
+		for="content" style="font-family: 'Public Sans', sans-serif; font-weight:900"> 
 		Text to Display: 
 		</label> 
 		<div class="col-sm-10"> 
@@ -51,7 +54,7 @@
                maxlength="60"
                class="form-control"
                id="content"
-               style="font-family: Inter;" 
+               style="font-family: 'Public Sans', sans-serif;" 
                placeholder="Enter billboard text" /> 
 		</div> 
         
@@ -61,14 +64,14 @@
             
     <!--Slider to set font size -->
         <div style="margin-bottom: 5vh;">
-            <p style="font-family: Inter; font-weight:900">Text Size: <span id="sizeDisplay" style="font-family: Inter">10vw</span></p>
+            <p style="font-family: 'Public Sans', sans-serif; font-weight:900">Text Size: <span id="sizeDisplay" style="font-family: Inter">10vw</span></p>
       <input type="range" min="1" max="100" value="10" class="slider" id="billboardSize">
         </div>
     
 		<!-- Button to generate QR Code for 
 		the entered data -->
 		<button type="button" class= 
-			"btn btn-primary" id="generate" style="font-family: Inter; font-weight:900"> 
+			"btn btn-primary" id="generate" style="font-family: 'Public Sans', sans-serif; font-weight:900"> 
 			Display Text
 		</button> 
 		</div> 
@@ -76,7 +79,7 @@
 	</div> 
     
     <div class="text-center border-top" style="min-height:100vh; height: auto; padding-top: 7vh;"> 
-         <h1 style="font-size: 10vw; font-family: Inter; font-weight:900; word-wrap: break-word; margin-top: 5vh" id="billboard">Type Anything</h1> 
+         <h1 style="font-size: 10vw; font-family: 'Public Sans', sans-serif; font-weight:900; word-wrap: break-word; margin-top: 5vh" id="billboard">Type Anything</h1> 
 	</div>
     
 </div> 
