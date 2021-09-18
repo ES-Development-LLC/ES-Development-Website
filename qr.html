@@ -59,6 +59,12 @@
 			"btn btn-primary" id="generate" style="font-family: Inter; font-weight:900"> 
 			Generate QR
 		</button> 
+            
+        	<button type="button" class= 
+        		"btn btn-primary" id="generateSVG" style="font-family: Inter; font-weight:900"> 
+        		Generate QR (SVG)
+        	</button>
+            
 		</div> 
 	</div> 
 	</div> 
@@ -69,12 +75,19 @@
 	this will change according to the 
 	data entered later -->
 	<img src= 
-"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+"https://api.gater.dev/makeQR/Hello World!"
 		class="qr-code img-thumbnail img-responsive" style="margin-top: 5vh;"/> 
 	</div> 
     
     
 </div> 
+
+
+
+
+
+
+
 <script src= 
 	"https://code.jquery.com/jquery-3.5.1.js"> 
 </script> 
@@ -99,13 +112,35 @@
 		// used to generate the QR Code 
 		// with the given data 
 		let finalURL = 
-'https://chart.googleapis.com/chart?cht=qr&chl=' + 
-		htmlEncode($('#content').val()) + 
-		'&chs=160x160&chld=L|0' 
+'https://api.gater.dev/makeQR/' + 
+		htmlEncode($('#content').val())
 
 		// Replace the src of the image with 
 		// the QR code image 
 		$('.qr-code').attr('src', finalURL); 
+	}); 
+	}); 
+
+	$(function () { 
+
+	// Specify an onclick function 
+	// for the generate button 
+	$('#generateSVG').click(function () { 
+
+		// Generate the link that would be 
+		// used to generate the QR Code 
+		// with the given data 
+		let finalURL = 'https://api.gater.dev/makeQR/svg/' + 
+		htmlEncode($('#content').val())
+
+		let displayURL = 'https://api.gater.dev/makeQR/' + 
+		htmlEncode($('#content').val())
+
+		// Replace the src of the image with 
+		// the QR code image 
+		$('.qr-code').attr('src', displayURL); 
+
+		window.open(finalURL, "_blank")
 	}); 
 	}); 
 </script> 
